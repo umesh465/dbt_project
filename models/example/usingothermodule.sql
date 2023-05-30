@@ -1,0 +1,1 @@
+select count(*) as data from {{ ref('model_for_demo') }}

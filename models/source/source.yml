@@ -1,0 +1,11 @@
+version: 2
+sources:
+  - name: source_student
+    description: 'testing purpose'
+    database: dbt
+    schema: dbt_umesh
+    tables:
+      - name: demo 
+      - name: demo2
+
+
