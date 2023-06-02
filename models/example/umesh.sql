@@ -1,0 +1,1 @@
+select count(*) as row_count from _AIRBYTE_RAW_SHEET1
