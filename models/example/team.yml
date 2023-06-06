@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: team
+    columns:
+      - name: id
+      
+      - name: team
+
+      - name: city
+        tests:
+          - is_even
+        
+      - name: state 
+

@@ -1,0 +1,22 @@
+version: 2
+
+sources:
+  - name: sourcename # required
+
+
+    freshness: # default freshness
+      warn_after: {count: 25, period: minute} #it can be minute, day , hour
+      error_after: {count: 40, period: minute}
+
+    #it checks in utc timezone so if your time not in utc then convert in utc- so it is converting y timezone to utc
+    loaded_at_field: created_at
+
+    description: 'testing purpose'
+    database: dbt
+    schema: dbt_umesh
+    tables:
+      - name: freshness_table
+        columns:
+          - name: id
+          - name: name
+          - name : created_at
